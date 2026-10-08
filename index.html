@@ -35,9 +35,9 @@
     const fill = document.querySelector("#fill"), loader = document.querySelector("#loader"), warn = document.querySelector("#warn");
     function showWarn(msg) { warn.textContent = msg; warn.style.display = "block"; setTimeout(() => warn.style.display = "none", 8000); }
     const config = {
-      dataUrl: "Build/f256df6c149ca47bb73e9b278ad3f07c.data.unityweb",
-      frameworkUrl: "Build/69139ead4163c5d7f6a2d26f1029180e.framework.js.unityweb",
-      codeUrl: "Build/38368774cdffc6da0842797007b8d611.wasm.unityweb",
+      dataUrl: "Build/64ea1bb9dd748b6f5f79b020d8a2e6c8.data.unityweb",
+      frameworkUrl: "Build/c91269ab01ccbc25b08d1385e913940c.framework.js.unityweb",
+      codeUrl: "Build/611b7976f8e6137aad7570daade98822.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Harvest Ages Team",
       productName: "Harvest Ages",
@@ -48,7 +48,7 @@
       config.devicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.5); // keep phones cool
     }
     const script = document.createElement("script");
-    script.src = "Build/6f790d2226100d6cae7379e52efcac75.loader.js";
+    script.src = "Build/c4b316958ac8c83052b3afb43180f59d.loader.js";
     script.onload = () => {
       createUnityInstance(canvas, config, (p) => { fill.style.width = (100 * p) + "%"; })
         .then(() => { loader.style.display = "none"; })
